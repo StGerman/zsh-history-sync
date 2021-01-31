@@ -1,0 +1,3 @@
+#!/bin/bash
+
+egrep -v '^#' .env | xargs bundle exec rspec HISTFILE=spec/fixtures/fake_history
